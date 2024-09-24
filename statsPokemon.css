@@ -1,0 +1,249 @@
+/*
+@Author: Javier Rico Navarro
+@Author: Manuel José Muñoz Marín
+ */
+
+body {
+  margin: 0;
+  background-image: url(/imagenes/fondo-body.jpg);
+  background-attachment: fixed;
+  background-position: center 0;
+  background-size: cover;
+  height: 100dvh;
+}
+
+.dark-mode {
+  background-color: #333;
+  color: #fff;
+  background-image: none;
+}
+
+.dark-mode #contenedor-pokemon * {
+  color: #fff;
+}
+
+.dark-mode .descripcion-pokemon * {
+  color: #fff;
+}
+
+
+.dark-mode .carta-pokemon {
+  padding: 0;
+}
+
+header {
+  background-color: rgb(58, 58, 58);
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 20dvh;
+}
+
+.boton-modonocturno {
+  margin-left: 1%;
+  align-self: center;
+}
+
+#modo-nocturno {
+  background-color: rgb(180, 180, 180);
+}
+
+#modo-nocturno img {
+  height: 30px;
+  width: auto;
+}
+
+.barra-superior {
+  padding: 2dvh 0 2dvh 0;
+  display: flex;
+  justify-content: left;
+  background-color: rgb(227, 148, 0);
+  width: 100%;
+  height: 8vh;
+}
+
+.logo-pokemon,
+img {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+
+/* EMPIEZO AQUÍ LOS ESTILOS DEL CSS
+* @author: Javier Rico Navarro
+*/
+
+#contenedor-pokemon {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 0, 5dvw;
+  padding: 1%;
+  max-width: 100dvw;
+  justify-items: center;
+  gap: 20px;
+}
+
+#contenedor-datos {
+  display: grid;
+  width: auto;
+  grid-template-columns: 1fr 1fr;
+  border-radius: 20px;
+  width: 40dvw;
+}
+
+@media (max-width: 768px) {
+  header {
+    height: 10vh;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  #contenedor-pokemon {
+    width: 90vw;
+    grid-template-columns: 1fr;
+  }
+
+  .contenedor-evoluciones {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .contenedor-evoluciones img {
+    height: 10%;
+    width: auto;
+  }
+
+}
+
+
+.pokemon-imagen {
+  width: 40dvw;
+  height: auto;
+  padding: 1%;
+  border-radius: 20px;
+  background-color: rgba(214, 214, 214, 0.803);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pokemon-imagen img {
+  width: 30dvw;
+  height: auto;
+}
+
+.carta-pokemon img {
+  width: 85%;
+  height: 85%;
+}
+
+.descripcion-pokemon {
+  width: 40dvw;
+  height: auto;
+  padding: 1%;
+  border-radius: 20px;
+  background-color: rgba(214, 214, 214, 0.803);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.contenedor-tipos {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 1dvw;
+}
+
+.pokemon-tipos2,
+.pokemon-tipos1 {
+  text-transform: capitalize;
+  font-size: 1.2em;
+  border: 3px solid;
+}
+
+.descripcion-pokemon h1,
+h3,
+p {
+  text-align: center;
+  color: black;
+  font-size: 1.3em;
+}
+
+.puntos-base {
+  width: 40dvw;
+  height: auto;
+  padding: 1%;
+  border-radius: 20px;
+  background-color: rgba(214, 214, 214, 0.803);
+  font-size: 1em;
+  overflow: auto;
+}
+
+.puntos-base-stats {
+  width: 40dvw;
+  height: auto;
+  font-weight: bold;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px 0px;
+}
+
+.stats-name {
+  text-align: left;
+  color: black;
+}
+
+.out {
+  width: 100%;
+  margin-right: 1dvw;
+  height: 2.7dvh;
+  background-color: rgb(255, 255, 255);
+}
+
+.in {
+  height: 100%;
+  background-color: rgb(255, 0, 0);
+}
+
+.cadena-evolutiva {
+  width: 40dvw;
+  height: auto;
+  padding: 1%;
+  border-radius: 20px;
+  background-color: rgba(214, 214, 214, 0.803);
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.cadena-evolutiva p {
+  font-size: 1em;
+
+}
+
+.contenedor-evoluciones {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+  gap: 5dvw;
+  justify-content: center;
+}
+
+.contenedor-evoluciones img {
+  height: 60%;
+  width: 100%;
+}
+
+.nombre-cadena-evolutiva {
+  text-transform: capitalize;
+  font-size: 1.2em;
+  font-weight: bold;
+}
